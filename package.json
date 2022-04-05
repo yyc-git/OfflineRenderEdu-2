@@ -1,0 +1,20 @@
+{
+    "name": "offline-render-2",
+    "private": true,
+	"scripts": {
+		"clean": "lerna clean && rm -rf node_modules yarn.lock",
+		"install": "lerna bootstrap"
+	},
+    "workspaces": [
+        "lessons/basic/*",
+        "exec/*"
+    ],
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
+    },
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    }
+}
