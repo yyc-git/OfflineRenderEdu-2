@@ -1,10 +1,10 @@
 {
     "name": "offline-render-2",
     "private": true,
-	"scripts": {
-		"clean": "lerna clean && rm -rf node_modules yarn.lock",
-		"install": "lerna bootstrap"
-	},
+    "scripts": {
+        "clean": "lerna clean && rm -rf node_modules yarn.lock",
+        "install": "lerna bootstrap"
+    },
     "workspaces": [
         "lessons/basic/*",
         "exec/*"
@@ -16,5 +16,14 @@
     },
     "devDependencies": {
         "lerna": "^4.0.0"
+    },
+    "dependencies": {
+        "@cwasm/jpeg-turbo": "^0.1.3",
+        "@cwasm/lodepng": "^0.1.4",
+        "atob": "^2.1.2",
+        "skia-canvas": "^0.9.26",
+        "cross-blob": "^2.0.0",
+        "lodash": "^4.17.20",
+        "wonder-webgpu": "0.0.1"
     }
 }
