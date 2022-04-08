@@ -1,6 +1,7 @@
 {
   "packages": [
     "lessons/basic/*",
+    "work_plugins/*",
     "exec/*"
   ],
   "npmClient": "yarn",

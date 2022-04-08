@@ -3,10 +3,12 @@
     "private": true,
     "scripts": {
         "clean": "lerna clean && rm -rf node_modules yarn.lock",
-        "install": "lerna bootstrap"
+        "install": "lerna bootstrap",
+        "build": "lerna run build:ts --concurrency 1"
     },
     "workspaces": [
         "lessons/basic/*",
+        "work_plugins/*",
         "exec/*"
     ],
     "config": {
