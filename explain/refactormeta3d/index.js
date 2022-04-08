@@ -35,9 +35,9 @@ let _init = () => {
 }
 
 let _main = async () => {
-    let threeSceneGraphData = _buildScene();
+    let sceneGraphData = _buildScene();
 
-    let renderData = _init(threeSceneGraphData);
+    let renderData = _init(sceneGraphData);
 
     while (true) {
         _render(renderData);
@@ -56,9 +56,9 @@ let _main = async () => {
 
 
 let _main = async () => {
-    let threeSceneGraphData = _buildScene();
+    let sceneGraphData = _buildScene();
 
-    let renderData = init pipeline-> exec(threeSceneGraphData);
+    let renderData = init pipeline-> exec(sceneGraphData);
 
     while (true) {
         render pipeline -> exec(renderData);

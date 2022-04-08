@@ -70,6 +70,7 @@ function _createTriangle(engineCoreState, engineCoreService) {
 	])
 	engineCoreState = setVertices(engineCoreState, engineCoreService, geometry, vertices)
 	engineCoreState = setIndices(engineCoreState, engineCoreService, geometry, indices)
+
 	engineCoreState = addGeometry(engineCoreState, engineCoreService, gameObject, geometry)
 
 	return [engineCoreState, gameObject]
