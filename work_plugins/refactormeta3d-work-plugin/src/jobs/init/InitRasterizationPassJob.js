@@ -6,7 +6,7 @@ const meta3d_component_geometry_protocol_1 = require("meta3d-component-geometry-
 const NullableUtils_1 = require("meta3d-commonlib-ts/src/NullableUtils");
 let execFunc = (engineCoreState, { getStatesFunc, setStatesFunc }) => {
     let states = getStatesFunc(engineCoreState);
-    let { mostService, engineCoreService, webgpuService, fsService, device, swapChainFormat, dirname } = (0, Utils_1.getState)(states);
+    let { mostService, engineCoreService, webgpuService, fsService, device, swapChainFormat, workPluginRootPath } = (0, Utils_1.getState)(states);
     device = (0, NullableUtils_1.getExn)(device);
     return mostService.callFunc(() => {
         let usedGeometryContribute = engineCoreService.unsafeGetUsedComponentContribute(engineCoreState, meta3d_component_geometry_protocol_1.componentName);
@@ -26,8 +26,8 @@ let execFunc = (engineCoreState, { getStatesFunc, setStatesFunc }) => {
         let layout = webgpuService.createPipelineLayout(device, {
             bindGroupLayouts: []
         });
-        let vertexShaderModule = webgpuService.createShaderModule(device, { code: fsService.readFileSync(dirname + "./src/shader/scene.vert", "utf-8") });
-        let fragmentShaderModule = webgpuService.createShaderModule(device, { code: fsService.readFileSync(dirname + "./src/shader/scene.frag", "utf-8") });
+        let vertexShaderModule = webgpuService.createShaderModule(device, { code: fsService.readFileSync(workPluginRootPath + "./src/shader/scene.vert", "utf-8") });
+        let fragmentShaderModule = webgpuService.createShaderModule(device, { code: fsService.readFileSync(workPluginRootPath + "./src/shader/scene.frag", "utf-8") });
         let renderPipeline = webgpuService.createRenderPipeline(device, {
             layout,
             vertexStage: {

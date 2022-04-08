@@ -22,7 +22,7 @@ let _getExecFunc = (_pipelineName, jobName) => {
 };
 let _init = (_state) => {
 };
-let getWorkPluginContribute = ({ mostService, webgpuService, engineCoreService, fsService, width, height, dirname }) => {
+let getWorkPluginContribute = ({ mostService, webgpuService, engineCoreService, fsService, width, height, workPluginRootPath }) => {
     return {
         workPluginName: refactormeta3d_work_plugin_protocol_1.workPluginName,
         createStateFunc: () => {
@@ -33,7 +33,7 @@ let getWorkPluginContribute = ({ mostService, webgpuService, engineCoreService, 
                 fsService,
                 width,
                 height,
-                dirname,
+                workPluginRootPath,
                 window: null,
                 device: null,
                 adapter: null,

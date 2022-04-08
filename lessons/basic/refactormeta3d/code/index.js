@@ -5,6 +5,7 @@ import { getExtensionService as getWebGPUExtensionService, createExtensionState 
 import { getExtensionService as getFSExtensionService, createExtensionState as createFSExtensionState } from "meta3d-fs/src/Main.js"
 import { getWorkPluginContribute as getPathTracerWorkPluginContribute } from "refactormeta3d-work-plugin/src/Main.js"
 import { createGeometry, setIndices, setVertices } from "engine-facade/src/GeometryAPI.js"
+import path from "path"
 
 function _getEngineCoreExtensionName() {
 	return "meta3d-engine-core"
@@ -32,7 +33,7 @@ function _registerWorkPlugins(engineCoreState, isDebug, meta3dState) {
 	engineCoreState =
 		registerWorkPlugin(
 			engineCoreState,
-			getPathTracerWorkPluginContribute({ mostService, webgpuService, fsService, engineCoreService, width: 640, height: 480, dirname: "../../../work_plugins/refactormeta3d-work-plugin/" }),
+			getPathTracerWorkPluginContribute({ mostService, webgpuService, fsService, engineCoreService, width: 640, height: 480, workPluginRootPath: path.join(process.cwd(), "./work_plugins/refactormeta3d-work-plugin/") }),
 			[
 				{
 					pipelineName: "init",

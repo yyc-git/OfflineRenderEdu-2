@@ -4,6 +4,7 @@
     "scripts": {
         "clean": "lerna clean && rm -rf node_modules yarn.lock",
         "install": "lerna bootstrap",
+        "run:refactormeta3d": "node lessons/basic/refactormeta3d/code/index.js",
         "build": "lerna run build:ts --concurrency 1"
     },
     "workspaces": [

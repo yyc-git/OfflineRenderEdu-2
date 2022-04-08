@@ -15,7 +15,7 @@ export type state = {
     fsService: fsService,
     width: number,
     height: number,
-    dirname: string,
+    workPluginRootPath: string,
     window: nullable<window>,
     device: nullable<device>,
     adapter: nullable<adapter>,
@@ -40,5 +40,5 @@ export type config = {
     fsService: fsService,
     width: number,
     height: number,
-    dirname: string,
+    workPluginRootPath: string,
 }
