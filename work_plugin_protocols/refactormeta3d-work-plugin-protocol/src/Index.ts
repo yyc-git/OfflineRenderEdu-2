@@ -1,8 +1,8 @@
 import { service as mostService } from "meta3d-bs-most-protocol/src/service/ServiceType"
-import { service as webgpuService, window, device, adapter, context, queue, swapChain, textureFormat, buffer, renderPipeline } from "meta3d-webgpu-node-protocol/src/service/ServiceType"
-// import { service as webgpuService } from "meta3d-webgpu-node-protocol/src/service/ServiceType"
+import { service as webgpuService, window, device, adapter, context, queue, swapChain, textureFormat, buffer, renderPipeline } from "webgpu-node-protocol/src/service/ServiceType"
+// import { service as webgpuService } from "webgpu-node-protocol/src/service/ServiceType"
 import { service as engineCoreService } from "meta3d-engine-core-protocol/src/service/ServiceType"
-import { service as fsService } from "meta3d-fs-protocol/src/service/ServiceType"
+import { service as fsService } from "fs-protocol/src/service/ServiceType"
 import { nullable } from "meta3d-commonlib-ts/src/nullable"
 
 export const workPluginName = "refactormeta3d-work-plugin"

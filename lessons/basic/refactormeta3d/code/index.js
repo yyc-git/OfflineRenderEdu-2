@@ -1,8 +1,8 @@
 import { prepare as prepareMeta3D, registerExtension, getExtensionService, getExtensionState, setExtensionState } from "meta3d"
 import { prepare as prepareEngine, prepareRegisterECSExtension, init as initEngine, render as renderEngine } from "engine-facade/src/DirectorAPI.js"
 import { addGeometry, createGameObject } from "engine-facade/src/GameObjectAPI.js"
-import { getExtensionService as getWebGPUExtensionService, createExtensionState as createWebGPUExtensionState } from "meta3d-webgpu-node/src/Main.js"
-import { getExtensionService as getFSExtensionService, createExtensionState as createFSExtensionState } from "meta3d-fs/src/Main.js"
+import { getExtensionService as getWebGPUExtensionService, createExtensionState as createWebGPUExtensionState } from "webgpu-node/src/Main.js"
+import { getExtensionService as getFSExtensionService, createExtensionState as createFSExtensionState } from "fs/src/Main.js"
 import { getWorkPluginContribute as getPathTracerWorkPluginContribute } from "refactormeta3d-work-plugin/src/Main.js"
 import { createGeometry, setIndices, setVertices } from "engine-facade/src/GeometryAPI.js"
 import path from "path"
@@ -16,11 +16,11 @@ function _getMeta3DBsMostExtensionName() {
 }
 
 function _getMeta3DWebGPUExtensionName() {
-	return "meta3d-webgpu-node"
+	return "webgpu-node"
 }
 
 function _getMeta3DFSExtensionName() {
-	return "meta3d-fs"
+	return "fs"
 }
 
 function _registerWorkPlugins(engineCoreState, isDebug, meta3dState) {

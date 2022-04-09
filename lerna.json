@@ -1,7 +1,11 @@
 {
   "packages": [
     "lessons/basic/*",
+    "work_plugin_protocols/*",
     "work_plugins/*",
+    "extension_protocols/*",
+    "extensions/*",
+    "defaults/*",
     "exec/*"
   ],
   "npmClient": "yarn",

@@ -2,14 +2,18 @@
     "name": "offline-render-2",
     "private": true,
     "scripts": {
-        "clean": "lerna clean && rm -rf node_modules yarn.lock",
+        "clean": "lerna clean",
         "install": "lerna bootstrap",
         "run:refactormeta3d": "node lessons/basic/refactormeta3d/code/index.js",
         "build": "lerna run build:ts --concurrency 1"
     },
     "workspaces": [
         "lessons/basic/*",
+        "work_plugin_protocols/*",
         "work_plugins/*",
+        "extension_protocols/*",
+        "extensions/*",
+        "defaults/*",
         "exec/*"
     ],
     "config": {

@@ -3,8 +3,7 @@
     "version": "0.3.0",
     "type": "module",
     "license": "MIT",
-    "scripts": {
-    },
+    "scripts": {},
     "dependencies": {
         "meta3d-commonlib": "^0.3.0",
         "meta3d-commonlib-ts": "^0.3.0",
@@ -33,20 +32,16 @@
         "meta3d-component-worker-utils": "^0.3.0",
         "meta3d-bs-most-protocol": "^0.3.0",
         "meta3d-engine-core-protocol": "^0.3.2",
-        "meta3d-fs-protocol": "^0.3.1",
         "meta3d-register-ecs-protocol": "^0.3.0",
         "meta3d-register-extension-protocol": "^0.3.0",
+        "meta3d-register-default-work-plugins-protocol": "^0.3.0",
         "meta3d-register-default-work-plugins": "^0.3.0",
-        "meta3d-webgpu-node-protocol": "^0.3.1",
         "meta3d-bs-most": "^0.3.0",
         "meta3d-engine-core": "^0.3.0",
-        "meta3d-fs": "^0.3.1",
         "meta3d-register-ecs": "^0.3.0",
         "meta3d-register-extension": "^0.3.0",
-        "meta3d-webgpu-node": "^0.3.1",
         "meta3d-work-plugin-root": "^0.3.0",
         "meta3d-work-plugin-root-protocol": "^0.3.0",
-        "engine-facade": "^0.3.0",
         "meta3d": "^0.3.0"
     },
     "devDependencies": {
